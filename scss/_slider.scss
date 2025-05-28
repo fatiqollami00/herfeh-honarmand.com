@@ -1,0 +1,36 @@
+
+.slider{
+    position: relative;
+    height: 70vh;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    object-fit: cover;
+}
+.slider i{
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(5px);
+
+}
+.prev{
+    left: 5%;
+}
+.next{
+    right: 5%;
+}
+.active{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
