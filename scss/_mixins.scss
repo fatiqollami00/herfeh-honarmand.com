@@ -1,0 +1,19 @@
+@mixin flexCenter(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex($jc,$ai,$gp:15px,$fd:row,$fw:nowrap){
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+    gap: $gp;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+}
+@mixin flex($jc,$gp:30px,$row:none){
+    display: flex;
+    justify-content:$jc ;
+    gap: $gp;
+   
+}
