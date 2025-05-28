@@ -1,0 +1,13 @@
+.cards{
+    padding: 50px 3%;
+    @include flex();
+    .cards-item{
+        height: 400px;
+        overflow: hidden;
+        box-shadow: 0 0 2px 2px rgba($color: #000000, $alpha: .2);
+        img{
+            width: 100%;
+            height: 70%;
+        }
+    }
+}
